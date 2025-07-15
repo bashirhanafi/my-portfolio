@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 
+
 import {
   HiArrowUpRight,
   HiOutlineLink,
@@ -12,7 +13,11 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiMiniSquares2X2 
 } from "react-icons/hi2";
+
+import { FaRobot, FaLaptopCode, FaArrowDownLong } from "react-icons/fa6";
+import { FaBrain } from "react-icons/fa";
 
 import {
   PiHouseDuotone,
@@ -23,6 +28,10 @@ import {
 } from "react-icons/pi";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads } from "react-icons/fa6";
+
+import { SiGooglecolab } from "react-icons/si";
+
+import { BiLogoPlayStore } from "react-icons/bi";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -45,7 +54,14 @@ export const iconLibrary: Record<string, IconType> = {
   threads: FaThreads,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   document: HiOutlineDocument,
-  rocket: HiOutlineRocketLaunch
+  rocket: HiOutlineRocketLaunch,
+  all: HiMiniSquares2X2,
+  brain: FaBrain,
+  robot: FaRobot,
+  laptop: FaLaptopCode,
+  colab: SiGooglecolab,
+  playstore: BiLogoPlayStore,
+  download: FaArrowDownLong
 };
 
 export type IconLibrary = typeof iconLibrary;

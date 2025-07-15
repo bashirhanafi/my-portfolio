@@ -1,0 +1,27 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 24px;
+  padding: 24px;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media screen and (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gridItem {
+  width: 100%;
+}

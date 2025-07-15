@@ -5,6 +5,7 @@ import { baseURL, about, person, work } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
+import {   Carousel } from "@once-ui-system/core";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "work", "projects"]);
@@ -69,28 +70,29 @@ export default async function Project({
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column maxWidth="xs" gap="16">
+      <Column maxWidth="s" gap="16">
         <Button data-border="rounded" href="/work" variant="tertiary" weight="default" size="s" prefixIcon="chevronLeft">
           Projects
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
       {post.metadata.images.length > 0 && (
-        <Media
-          priority
-          aspectRatio="16 / 9"
-          radius="m"
-          alt="image"
-          src={post.metadata.images[0]}
-        />
+      <Carousel
+        sizes="(max-width: 960px) 100vw, 960px"
+        maxWidth={"s"}
+        items={post.metadata.images.map((image) => ({
+          slide: image,
+          alt: post.metadata.title, // atau `${post.metadata.title} - image`
+        }))}
+      />
       )}
-      <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
-        <Flex gap="12" marginBottom="24" vertical="center">
+      <Column style={{ margin: "auto" }} as="article" maxWidth="s">
+        {/* <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}
           <Text variant="body-default-s" onBackground="neutral-weak">
             {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
           </Text>
-        </Flex>
+        </Flex> */}
         <CustomMDX source={post.content} />
       </Column>
       <ScrollToHash />

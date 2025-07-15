@@ -1,0 +1,35 @@
+---
+title: "Technology Behind AI Smart Trash Can: CNNs Approach for Sorting Organic and Recyclable Waste with GradCAM Explainable AI"
+category: "ai"
+publishedAt: "2023-05-08"
+summary: "Effective waste management is a critical challenge in ensuring environmental sustainability, especially in urban areas that generate high volumes of waste on a daily basis. One innovative solution offered is the use of an AI Smart Trash Can powered ..."
+images:
+  - "/images/projects/waste/Group 16.png"
+  - "/images/projects/waste/Group 15 (1).png"
+team:
+link: "https://colab.research.google.com/drive/1BBioAcnzxQSznOtX-Z1XQbSpGUGa-EVM?usp=sharing"
+---
+
+<Button href="https://colab.research.google.com/drive/1BBioAcnzxQSznOtX-Z1XQbSpGUGa-EVM?usp=sharing" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="colab">
+  <Text variant="body-default-m">Google Colab</Text>
+</Button>
+
+## Overview
+Effective waste management is a critical challenge in ensuring environmental sustainability, especially in urban areas that generate high volumes of waste on a daily basis. One innovative solution offered is the use of an AI Smart Trash Can powered by Convolutional Neural Networks (CNNs) to automatically classify waste into organic and recyclable categories. CNNs are capable of recognizing visual patterns in waste images, enabling real-time waste separation without human intervention. To enhance transparency and trust in the system, Explainable AI methods such as Grad-CAM (Gradient-weighted Class Activation Mapping) are employed to visualize the important areas in an image that influence the model’s classification decisions. This approach not only improves the efficiency of waste sorting but also makes the process more interpretable and auditable by users.
+
+{/* ![Deskripsi gambar](/images/projects/uncovering/association-2.png) */}
+
+## Technologies Used
+
+- **Python**: Used as the main programming language for implementing.
+- **TensorFlow**: Utilized to build and train the Convolutional Neural Network (CNN) model for waste classification.
+- **Matplotlib**: Employed for visualizing model performance metrics.
+- **OpenCV**: Utilized for GradCAM processing.
+
+## Future Insights
+
+CNN models tend to focus on dominant visual patterns like color and shape rather than semantic context, making them vulnerable to distracting backgrounds or additional objects. To improve generalization, training data should include more contextual variation. Grad-CAM is effective for monitoring model focus and can be used in future automated feedback loops. Additionally, applying object detection or segmentation before classification can help the model focus only on relevant regions.
+
+## Challenges and Learnings
+
+One of the main challenges in this project was dealing with misclassification caused by distracting visual elements or unusual object contexts, which revealed the model’s reliance on low-level visual features rather than semantic understanding. This limitation highlighted the importance of dataset diversity and contextual variation during training. Through this, I learned how crucial tools like Grad-CAM are for interpreting model decisions and how integrating pre-processing techniques such as object detection or segmentation can significantly improve classification accuracy.

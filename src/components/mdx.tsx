@@ -64,11 +64,12 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
       marginBottom="16"
       enlarge
       radius="m"
-      aspectRatio="16 / 9"
+      aspectRatio="16/9"
       border="neutral-alpha-medium"
       sizes="(max-width: 960px) 100vw, 960px"
       alt={alt}
       src={src}
+      objectFit="contain"
       {...props}
     />
   );
@@ -151,6 +152,23 @@ function createCodeBlock(props: any) {
   return <pre {...props} />;
 }
 
+function createButton(props: any) {
+  return (
+    <Button
+      href="www.google.com"
+      size="l"
+      {...props}
+      data-border="rounded"
+      variant="tertiary" 
+      weight="default" 
+      prefixIcon="chevronLeft"
+      style={{ display: "inline-flex" }}
+    >
+      <Text variant="body-default-s">{props.children}</Text>
+    </Button>
+  );
+}
+
 const components = {
   p: createParagraph as any,
   h1: createHeading("h1") as any,
@@ -163,6 +181,7 @@ const components = {
   a: CustomLink as any,
   code: createInlineCode as any,
   pre: createCodeBlock as any,
+  button: createButton as any,
   Heading,
   Text,
   CodeBlock,

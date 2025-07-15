@@ -10,5 +10,10 @@
 }
 
 .gridItem {
-    margin-bottom: var(--static-space-16);
+  display: block;
+  width: 100%;       // Ini penting agar gambar meluas penuh sesuai kolom Masonry
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px; // Opsional, kalau kamu pakai prop `radius="m"`
+  margin-bottom: var(--static-space-16);
 }

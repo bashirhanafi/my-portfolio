@@ -1,0 +1,33 @@
+---
+title: "Analysis of the Impact of National Exam Scores on High School Accreditation After the Abolition of the National Exam in South Kalimantan Using Robust Regression"
+category: "ai"
+publishedAt: "2024-04-08"
+summary: "This study discusses the role of the National Examination (UN) and school accreditation in improving the quality of education in Indonesia. School accreditation serves as an evaluation of educational ..."
+images:
+  - "/images/projects/un/analisis un.png"
+  - "/images/projects/un/Group 9 (1).png"
+link: "https://colab.research.google.com/drive/198Q3xh3_L6MeoI2FhwairB0kJMCxW42z?usp=sharing"
+---
+
+<Button href="https://colab.research.google.com/drive/198Q3xh3_L6MeoI2FhwairB0kJMCxW42z?usp=sharing" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="colab">
+  <Text variant="body-default-m">Google Colab</Text>
+</Button>
+
+## Overview
+
+This study examines the relationship between the National Examination (UN) and school accreditation in Indonesia, particularly after the UN was abolished in 2020 for being overly focused on cognitive aspects and placing undue pressure on students and schools. With the 2024 plan to reinstate the UN sparking public debate, this study analyzes whether UN scores still hold relevance in influencing school accreditation. The robust regression results show that the model is statistically significant overall. This indicates that the independent variables collectively have a meaningful impact on accreditation, though the R² value of 0.253 suggests that a large portion of the variation is still explained by factors outside the model.
+
+## Technologies Used
+
+- **Pandas**: Used for data cleaning, manipulation, and analysis of structured data.
+- **Matplotlib**: Utilized to create visualizations such as charts and graphs for data interpretation.
+- **SciPy**: Provides scientific and statistical computing tools, including advanced mathematical functions.
+- **statsmodels**: Used for performing statistical modeling and hypothesis testing, such as regression analysis.
+
+## Future Insights
+
+This study suggests that future educational assessments in Indonesia should adopt a more comprehensive and multidimensional approach. While UN scores contribute to accreditation outcomes, their limited explanatory power underscores the need to incorporate broader indicators of school quality. Future research may focus on identifying and integrating these diverse factors to develop a more holistic framework for school evaluation.
+
+## Challenges and Learnings
+
+One of the main challenges I faced was that the data did not meet the normality assumption, even after applying various statistical tests and multiple transformation techniques. I also considered removing outliers to improve the model, but further analysis showed that these outliers represented top-performing schools, which were contextually important and should not be excluded. To address both the non-normality issue and the presence of meaningful outliers, I chose to apply robust regression. This experience taught me the importance of aligning statistical methods with the nature of the data and preserving valuable information, reinforcing the need for thoughtful, context-aware modeling decisions.

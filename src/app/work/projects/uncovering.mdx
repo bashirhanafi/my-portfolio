@@ -1,0 +1,37 @@
+---
+title: "Uncovering Interest Patterns of MSIB Batch 6 Registrants at Hasnur Centre Foundation using the Frequent Pattern Growth Algorithm"
+category: "ai"
+publishedAt: "2024-04-08"
+summary: "In Batch 6 of 2024, more than 150,000 students from 700 universities registered for the MSIB program, with 47,984 students selected to participate ..."
+images:
+  - "/images/projects/uncovering/YHC-QuIP-Batch-VI-770x513.jpg"
+  - "/images/projects/uncovering/association.png"
+  - "/images/projects/uncovering/association-2.png"
+team:
+link: "https://colab.research.google.com/drive/1-kq-N8TadWvvCl3kJBEFG5y0zVkUhZJh?usp=sharing"
+---
+
+<Button href="https://colab.research.google.com/drive/1-kq-N8TadWvvCl3kJBEFG5y0zVkUhZJh?usp=sharing" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="colab">
+  <Text variant="body-default-m">Google Colab</Text>
+</Button>
+
+## Overview
+
+In Batch 6 of 2024, over 150,000 students from 700 universities registered for the MSIB program, with 47,984 selected. Hasnur Centre Foundation joined this initiative to foster institutional collaboration, support Banua’s development, and enhance human resource competitiveness. From 6,859 applicants, 151 students from 57 universities were placed across 12 work units in various locations. The foundation offered diverse internship roles aligned with students’ academic backgrounds and interests. However, no prior research had analyzed applicant interest patterns at Hasnur Centre Foundation in MSIB Batch 6. To address this, the FP-Growth algorithm was used with a minimum support of 0.03 and confidence of 0.92 to uncover position selection patterns. The results revealed six association rules, showing that students often choose positions that are thematically related, especially in education and digital business development. These patterns are influenced by academic alignment, competencies, and similarities in Graduate Learning Outcomes (CPL). The strongest rule identified was the combination of Pre-Service Teacher GIBS, Research Curriculum & Content Development BCTI, and Curriculum and Content Development HAFECS, consistently performing well across all evaluation metrics. In contrast, combinations like Business Development CODERO and roles at WETLANDBOX showed strong values in specific metrics (e.g., leverage) but lacked overall consistency.
+
+{/* ![Deskripsi gambar](/images/projects/uncovering/association-2.png) */}
+
+## Technologies Used
+
+- **Python**: A versatile programming language used for general-purpose programming, including data analysis and machine learning.
+- **Pandas**: A powerful data analysis and manipulation library in Python, useful for handling structured data like tables (DataFrames).
+- **Mlxtend**: A Python library that provides machine learning extensions, including tools for frequent pattern mining (like Apriori and FP-Growth), model evaluation, and data preprocessing.
+- **Matplotlib**: A plotting library for Python used to create static, animated, and interactive visualizations in 2D.
+
+## Future Insights
+
+Recruitment strategies can be optimized by aligning them with students’ educational backgrounds, as certain majors tend to dominate specific roles—such as education students in teaching-related positions and business students in business-oriented roles—partly due to institutional policies on CPL and credit conversion. To enhance competency development, internship programs can design cross-position Graduate Learning Outcomes (CPL) across similar roles, supporting more integrated learning experiences. Encouraging collaboration between related roles may also strengthen career pathways, such as transitioning from Pre-Service Teacher to Content Developer through curriculum exposure. Finally, qualitative validation through interviews or surveys can provide deeper insights into why applicants tend to choose thematically related positions, reinforcing the findings from association rule mining.
+
+## Challenges and Learnings
+
+The main challenge in this project was interpreting the metric results into meaningful narratives that are institutionally relevant, especially for non-technical audiences such as management. One key lesson I learned is the importance of understanding the context behind the data—where figures like support, confidence, and lift must be translated into actionable insights. I also learned that data analysis is not just about technical accuracy, but also about the ability to craft a narrative that bridges analytical findings with the strategic needs of the organization. Additionally, using multiple evaluation metrics helped me assess the strength and consistency of associations from different perspectives, while qualitative approaches such as interviews are essential to enrich and validate the results comprehensively.

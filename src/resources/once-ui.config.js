@@ -9,6 +9,10 @@ const routes = {
   "/work": true,
   "/blog": true,
   "/gallery": true,
+  "/work/all": true,
+  "/work/ai": true,
+  "/work/robotics": true,
+  "/work/se": true
 };
 
 const display = {

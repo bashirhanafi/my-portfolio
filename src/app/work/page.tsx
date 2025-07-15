@@ -1,6 +1,7 @@
 import { Column, Meta, Schema } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/work/Projects";
+import { SubHeader } from "@/components/SubHeader"
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -13,8 +14,10 @@ export async function generateMetadata() {
 }
 
 export default function Work() {
+
   return (
-    <Column maxWidth="m">
+    <Column>
+      < SubHeader />
       <Schema
         as="webPage"
         baseURL={baseURL}
