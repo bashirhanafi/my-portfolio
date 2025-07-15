@@ -168,7 +168,7 @@ export default function Home() {
     <RevealFx>
     <Text variant="heading-default-m" style={{ lineHeight: 1.6, marginBottom: "12px" }}>
       A computer science graduate who looking forward becoming Software AI Engineer.
-      Enjoy building things with 'intelligence', ranging from web development to application development.
+      Enjoy building things with &apos;intelligence&apos;, ranging from web development to application development.
       My work has focused on real-world challenges in areas such as tourism, education, agriculture, and disaster response. I’m passionate about using technology to develop meaningful and innovative solutions.
     </Text>
     </RevealFx>
