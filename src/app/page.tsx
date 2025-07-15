@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "@once-ui-system/core";
-
+import Image from "next/image"
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema } from "@once-ui-system/core";
 import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
@@ -131,20 +131,22 @@ export default function Home() {
     justifyContent: "center",
   }}
 >
-  <RevealFx>
-    <img
-      src="/images/avatar.jpg"
-      alt="Foto Profil"
-      style={{
-        width: "100%",
-        maxWidth: "200px",
-        borderRadius: "50px",
-        objectFit: "cover",
-        aspectRatio: "1 / 1",
-        border: "3px solid white",
-      }}
-    />
-  </RevealFx>
+<RevealFx>
+  <Image
+    src="/images/avatar.jpg"
+    alt="Foto Profil"
+    width={200}
+    height={200}
+    style={{
+      width: "100%",
+      maxWidth: "200px",
+      borderRadius: "50px",
+      objectFit: "cover",
+      aspectRatio: "1 / 1",
+      border: "3px solid white",
+    }}
+  />
+</RevealFx>
 </Column>
 
 
