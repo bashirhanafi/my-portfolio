@@ -91,7 +91,7 @@ export default function Home() {
             <Button
               id="about2"
               data-border="rounded"
-              href="https://docs.google.com/document/d/1kxCssgNp-elFJkumMhLj4RM6kG8I0Jf4sgCQNdEPXuI/preview?tab=t.0"
+              href="https://docs.google.com/document/d/1G_IozSXLL6kKa-3b-Al6cYuy354xzA7GrJjZQQSHW-Y/preview?tab=t.0"
               variant="secondary"
               size="m"
               weight="default"
