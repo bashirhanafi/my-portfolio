@@ -18,8 +18,7 @@ const newsletter = {
   title: <>Connect with me</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I enjoy sharing my thoughts on design, technology, and how creativity meets engineering—often from the lens of building AI-powered products and solving real-world problems.
     </>
   ),
 };
