@@ -116,15 +116,16 @@ const about = {
             Achieved a five-star rating and was downloaded by over 400+ users on the Play Store, enhancing efficiency, flexibility, and personalization for travel planning
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: []
+        // images: [
+        //   // optional: leave the array empty if you don't want to display images
+        //   {
+        //     src: "/images/projects/project-01/cover-01.jpg",
+        //     alt: "Once UI Project",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        // ],
       },
       {
         company: "Computer Science Lab FMIPA ULM",
