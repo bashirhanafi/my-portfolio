@@ -37,11 +37,11 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/bashirhanafi",
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  // },
   {
     name: "Email",
     icon: "email",
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      A Software AI Engineer who loves code, data, and 🍵
+      A Software AI Engineer who loves data, code, and 🍵
       <br /> I love turning ideas to intelligence system
     </>
   ),
@@ -90,7 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-       I am a graduate of a Bachelor of Computer Science with a focus on Data Science, looking forward to becoming an AI engineer. Certified TensorFlow Developer Certificate (TFDC) with strong interests in data analytics, machine learning development, deep learning, and natural language processing. Proficient hard skills including Python, TensorFlow, PyTorch, Fast API, and more with deep mathematical understanding. I’ve been actively involved in work experiences, internships, academic research, and over 10 national competitions while maintaining a strong academic performance. My work has focused on real-world challenges in areas such as tourism, education, and disaster response. I’m passionate about using technology to develop meaningful and innovative solutions
+       I am a graduate of a Bachelor of Computer Science with a focus on Data Science, looking forward to becoming an Software AI engineer. Certified TensorFlow Developer Certificate (TFDC) with strong interests in software engineering, data analytics, and machine learning development. Proficient hard skills including Python, TensorFlow, PyTorch, Fast API, Next.js, React.js, and more with deep mathematical understanding. I’ve been actively involved in work experiences, internships, academic research, and over 10 national competitions while maintaining a strong academic performance. My work has focused on real-world challenges in areas such as tourism, education, and disaster response. I’m passionate about using technology to develop meaningful and innovative solutions
       </>
     ),
   },
@@ -295,7 +295,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

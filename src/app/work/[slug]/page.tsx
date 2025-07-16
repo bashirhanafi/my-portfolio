@@ -75,6 +75,7 @@ export default async function Project({
           Projects
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
+        
       </Column>
       {post.metadata.images.length > 0 && (
       <Carousel

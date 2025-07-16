@@ -27,11 +27,14 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
+import { LiaCertificateSolid } from "react-icons/lia";
+
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads } from "react-icons/fa6";
 
 import { SiGooglecolab } from "react-icons/si";
 
 import { BiLogoPlayStore } from "react-icons/bi";
+import { Certificate } from "crypto";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -61,7 +64,8 @@ export const iconLibrary: Record<string, IconType> = {
   laptop: FaLaptopCode,
   colab: SiGooglecolab,
   playstore: BiLogoPlayStore,
-  download: FaArrowDownLong
+  download: FaArrowDownLong,
+  certificate: LiaCertificateSolid
 };
 
 export type IconLibrary = typeof iconLibrary;
