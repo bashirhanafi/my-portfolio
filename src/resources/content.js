@@ -239,18 +239,17 @@ const about = {
     display: true, // set to false to hide this section
     title: "Achievements",
     achivements: [
-      <>Top 10 Product-based Capstone Project & Incubation Funding IDR 140 M from Google & Dirjen Ristekdikti</>,
-      <>Machine Learning Graduate with Distinction Predicate Bangkit Academy 2023 Batch 2</>,
-      <>Program Kreativitas Mahasiswa bidang Kewirausahaan (PKM-K) 2023 Funded</>,
-      <>Business Funded Arutmin Got Talent</>,
-      <>Finalist of Fordigi Goes to Campus Hackathon Challenge BUMN 2023 chapter Banjarmasin</>,
-      <>Finalist of National Business Plan Competition Greenovation Quest ITS 2023</>,
-      <>Semifinalist of the International Business Plan Competition, StudentsxCEOs International Summit</>,
-      <>Best Commendation Journey Awardee of Company Strategy Battle 2024 The New You Institute</>,
-      <>2nd Awardee of Best Business Stand Grand Opening Wirausaha Merdeka Kampus Merdeka ULM 2023</>,
-      <>Speaker of Study Jam #6 GDSC Universitas Negeri Gorontalo,
-      <>Top 20 Awardee of National Essay Writing Competition 2022 UNIKA Santo Thomas</>
-</>
+    "Top 10 Product-based Capstone Project & Incubation Funding IDR 140 M from Google & Dirjen Ristekdikti",
+      "Machine Learning Graduate with Distinction Predicate Bangkit Academy 2023 Batch 2",
+      "Program Kreativitas Mahasiswa bidang Kewirausahaan (PKM-K) 2023 Funded",
+      "Business Funded Arutmin Got Talent",
+      "Finalist of Fordigi Goes to Campus Hackathon Challenge BUMN 2023 chapter Banjarmasin",
+      "Finalist of National Business Plan Competition Greenovation Quest ITS 2023",
+      "Semifinalist of the International Business Plan Competition, StudentsxCEOs International Summit",
+      "Best Commendation Journey Awardee of Company Strategy Battle 2024 The New You Institute",
+      "2nd Awardee of Best Business Stand Grand Opening Wirausaha Merdeka Kampus Merdeka ULM 2023",
+      "Speaker of Study Jam #6 GDSC Universitas Negeri Gorontalo",
+      "Top 20 Awardee of National Essay Writing Competition 2022 UNIKA Santo Thomas"
     ],
   },
   technical: {

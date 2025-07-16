@@ -88,7 +88,7 @@ export const SubHeader = () => {
                         className="s-flex-hide"
                         prefixIcon="brain"
                         href="/work/ai"
-                        label="AI/ML"
+                        label="AI/ML/Data"
                         selected={pathname.startsWith("/work/ai")}
                       />
                       <ToggleButton

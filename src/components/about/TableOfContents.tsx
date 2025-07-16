@@ -8,7 +8,7 @@ interface TableOfContentsProps {
   structure: {
     title: string;
     display: boolean;
-    items: string[];
+    items: React.ReactNode[];
   }[];
   about: {
     tableOfContent: {
@@ -72,7 +72,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
                     gap="12"
                     paddingLeft="24"
                     vertical="center"
-                    onClick={() => scrollTo(item, 80)}
+                    // onClick={() => scrollTo(item, 80)}
                   >
                     <Flex height="1" minWidth="8" background="neutral-strong"></Flex>
                     <Text>{item}</Text>
