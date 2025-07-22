@@ -1,0 +1,32 @@
+---
+title: "Flood-Affected Buildings Detection from Aerial Imagery using YOLO8, YOLO11, YOLO12, and YOLO-World"
+category: ["ai", "rb"]
+publishedAt: "2025-04-01"
+summary: "Floods often cause extensive damage to infrastructure, with buildings being among the most severely affected. Rapid identification of flood-impacted buildings is critical for timely emergency response and efficient resource distribution. However ..."
+images:
+  - "/images/projects/flooddamage/flood-thumbnail.png"
+team:
+link: "https://colab.research.google.com/drive/1QBUXkEiqwuSHms923Zbe9pgrnqat4tQs?usp=sharing"
+---
+
+<Button href="https://colab.research.google.com/drive/1QBUXkEiqwuSHms923Zbe9pgrnqat4tQs?usp=sharing" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="colab">
+  <Text variant="body-default-m">Google Colab</Text>
+</Button>
+
+## Overview
+
+Floods often cause extensive damage to infrastructure, with buildings being among the most severely affected. Rapid identification of flood-impacted buildings is critical for timely emergency response and efficient resource distribution. However, manual damage assessment is labor-intensive and impractical for large-scale disaster zones. This project presents an initial prototype for detecting flood-affected buildings using aerial imagery and state-of-the-art object detection models, including YOLO v8, YOLO v11s, YOLO v12s, and YOLO-World. A custom dataset of 400 aerial images was manually annotated using Label Studio. Model performance was evaluated using mAP50 and mAP50-95 metrics. Results show that YOLO v12s achieved the highest mAP50 score of 0.610, while YOLO v11s achieved the highest mAP50-95 score of 0.246. The findings highlight a trade-off between detection accuracy and inference time, which is crucial for selecting models in real-time applications. Click [here](https://www.youtube.com/watch?v=5NFj2LcOCp8&ab_channel=MuhammadBashirHanafi) to watch the video experiment.
+
+## Technologies Used
+
+- **Python**: Core language for YOLO models development.
+- **Ultralytics**: Used for implementing and training YOLO-based object detection models (YOLOv8, YOLOv11, YOLOv12, and YOLO-World) to detect flood-affected buildings from aerial imagery.
+- **Matplotlib**: Employed for visualizing the performance.
+
+## Outcome
+
+As a result of this project, I successfully developed an initial YOLO-based object detection model to identify flood-affected buildings from aerial imagery. I manually annotated 400 images using Label Studio, which contributed to building a foundational dataset for training. By experimenting with various YOLO variants—YOLOv8, YOLOv11, YOLOv12, and YOLO-World—I was able to benchmark their performance and understand their respective strengths and limitations.
+
+## Challenges and Learnings
+
+One of the main challenges I encountered was the difficulty of YOLO models in distinguishing between visually similar objects, such as submerged vehicles and rocks, especially in complex flood scenarios. Through this experience, I learned that increasing the quantity and diversity of annotated training data is essential to improve the model’s ability to differentiate between such confusing objects.

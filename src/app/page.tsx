@@ -208,6 +208,7 @@ export default function Home() {
       </Flex>
       <Marquee direction="right" speed={30} gradient={false} pauseOnHover>
         <SkillPill label="Software Engineering"/>
+        <SkillPill label="Web Development"/>
         <SkillPill label="Database System"/>
         <SkillPill label="Prediction"/>
         <SkillPill label="Natural Language Processing"/>
@@ -221,12 +222,16 @@ export default function Home() {
         <SkillPill label="Classification"/>  
         <SkillPill label="Clustering"/>
         <SkillPill label="Association"/>
+        <SkillPill label="Explainable AI"/>
         <SkillPill label="SPSS"/>                 
       </Marquee>
       <Marquee speed={30} gradient={false} pauseOnHover>
         <SkillPill label="TensorFlow"/>
+        <SkillPill label="TensorFlow.js"/>
+        <SkillPill label="TensorFlow Lite"/>
         <SkillPill label="Python"/>
         <SkillPill label="OpenCV"/>
+        <SkillPill label="YOLO Ultralytics"/>
         <SkillPill label="scikit-learn"/>
         <SkillPill label="HuggingFace Transformers"/>
         <SkillPill label="Pandas"/>
