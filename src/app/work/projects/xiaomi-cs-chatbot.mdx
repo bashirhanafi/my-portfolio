@@ -1,0 +1,35 @@
+---
+title: "Xiaomi Customer Service Chatbot with LangChain & Llama3.2:3b (Local)"
+category: "ai"
+publishedAt: "2025-04-08"
+summary: "The Xiaomi Customer Support Chatbot is designed to automatically assist customers by answering common inquiries such as product availability, order status, product specifications, and warranty ..."
+images:
+  - "/images/projects/xiaomi-cs-chatbot/flow.png"
+link: "https://github.com/bashirhanafi/xiaomi_cs_chatbot"
+---
+
+<Button href="https://github.com/bashirhanafi/xiaomi_cs_chatbot" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="github">
+  <Text variant="body-default-m">GitHub</Text>
+</Button>
+
+## Overview
+
+The Xiaomi Customer Support Chatbot is designed to automatically assist customers by answering common inquiries such as product availability, order status, product specifications, and warranty policies. Powered by Llama 3.2:3B, it delivers natural and efficient responses, reducing the workload of manual customer service teams while enhancing customer satisfaction. The chatbot features conversation memory (retaining up to three previous interactions) to provide smoother, context-aware dialogue and stores all conversation history in a database for future analysis and continuous improvement.
+## Technologies Used
+
+- **Python**: Used as the main programming language.
+- **LangChain**: A framework for connecting LLMs with data, memory, and external tools.
+- **Ollama**: A runtime for running LLM models locally.
+- **Llama 3.2:3B Model**: A lightweight LLM from Meta with 3B parameters for local inference.
+- **PostgreSQL**: An open-source relational database for storing data and chat history.
+- **sentence-transformers**: A library for generating embeddings for semantic search.
+- **PyPDF2**: A Python library for reading and processing PDF files.
+- **FastAPI**: A modern framework for building APIs with automatic documentation.
+
+## Outcome
+
+The outcome of the Xiaomi AI Customer Service Chatbot is an intelligent, automated support system that improves customer satisfaction while reducing the workload on manual service teams. It can instantly handle common inquiries such as product stock, order status, specifications, and warranty policies, while maintaining context with memory of the last three interactions. All conversation history is stored in PostgreSQL for tracking and analysis, and the system integrates seamlessly with external tools via LangChain as orchestraction framework. Running locally on Ollama with the Llama 3.2:3B model, the chatbot ensures efficient inference without cloud dependency and is accessible through FastAPI for easy integration.
+
+## Challenges and Learnings
+
+A major challenge during development was the frequent deprecation of features in LangChain, which required migrating to updated modules and adjusting the overall chatbot workflow. While this added complexity and slowed down progress, it provided meaningful learning on how to adapt to rapid changes in LangChain’s ecosystem, restructure agents and memory handling, and build a more future-proof and maintainable chatbot system.

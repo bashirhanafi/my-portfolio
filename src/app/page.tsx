@@ -210,7 +210,8 @@ export default function Home() {
         <SkillPill label="Software Engineering"/>
         <SkillPill label="Web Development"/>
         <SkillPill label="Database System"/>
-        <SkillPill label="Prediction"/>
+        <SkillPill label="Regression"/>
+        <SkillPill label="Forecasting"/>
         <SkillPill label="Natural Language Processing"/>
         <SkillPill label="Generative AI"/> 
         <SkillPill label="Recommender System"/> 
@@ -227,8 +228,12 @@ export default function Home() {
       </Marquee>
       <Marquee speed={30} gradient={false} pauseOnHover>
         <SkillPill label="TensorFlow"/>
+        <SkillPill label="PyTorch"/>
         <SkillPill label="TensorFlow.js"/>
         <SkillPill label="TensorFlow Lite"/>
+        <SkillPill label="MLflow"/>
+        <SkillPill label="LangChain"/>
+        <SkillPill label="OpenAI API"/>
         <SkillPill label="Python"/>
         <SkillPill label="OpenCV"/>
         <SkillPill label="YOLO Ultralytics"/>
@@ -239,12 +244,14 @@ export default function Home() {
         <SkillPill label="Matplotlib"/>
         <SkillPill label="seaborn"/> 
         <SkillPill label="R"/>
-        <SkillPill label="NTLK"/>                                                        
+        <SkillPill label="NTLK"/>
+        <SkillPill label="n8n"/>                                                        
       </Marquee>
       <Marquee direction="right" speed={30} gradient={false} pauseOnHover>
         <SkillPill label="Git/GitHub"/>
         <SkillPill label="HTML"/>
         <SkillPill label="CSS"/>
+        <SkillPill label="PostgreSQL"/>
         <SkillPill label="JavaScript"/>
         <SkillPill label="Next.js"/>
         <SkillPill label="React"/>  

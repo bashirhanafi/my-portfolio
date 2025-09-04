@@ -311,7 +311,7 @@ const work = {
 };
 
 const gallery = {
-  path: "/gallery",
+  path: "/certificates",
   label: "Certification",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
