@@ -1,0 +1,37 @@
+---
+title: "United Tractors (UNTR) Stock Market Forecasting from Baseline, Statistical, Linear Regression, Machine Learning, to Deep Learning with MLflow Tracking"
+category: "ai"
+publishedAt: "2025-04-07"
+summary: "This project presents a comprehensive framework for forecasting UNTR stock prices by combining advanced time series transformations with a diverse set of forecasting ..."
+images:
+  - "/images/projects/untr/mlflow2.png"
+  - "/images/projects/untr/mlflow.png"
+link: "http://159.223.56.142:5000/"
+---
+
+<Button href="http://159.223.56.142:5000/" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="globe">
+  <Text variant="body-default-m">MLflow</Text>
+</Button>
+
+## Overview
+
+This repository presents a comprehensive framework for forecasting UNTR stock prices by combining advanced time series transformations with a diverse set of forecasting models. The workflow begins with rigorous preprocessing steps such as differencing, logarithmic transformation, detrending, seasonal decomposition, and rolling statistics to ensure data stationarity and enhance model performance. A broad spectrum of models is then applied, ranging from simple baselines (Naive Forecast, Moving Average, TMA + Differenced + TMA + CMA) and classical statistical approaches (ARIMA, Prophet), to machine learning methods (Multiple Linear Regression, Lasso, Ridge, SGD), boosting algorithms (Random Forest, Gradient Boosting, XGBoost, LightGBM, CatBoost), and deep learning architectures (MLP, RNN, LSTM, GRU). Model performance is evaluated comprehensively using MAPE, RMSE, and R², ensuring both accuracy and robustness of results. To maintain reproducibility and enable systematic experimentation, all experiments, including parameters, metrics, and outputs, are tracked in a MLflow environment, making this repository an end-to-end laboratory for stock market forecasting research and experimentation.
+
+## Technologies Used
+
+- **Scalecast**: A Python package for time series forecasting with flexible model building and evaluation.
+- **sktime**: A unified framework for machine learning with time series, including forecasting, classification, and transformation.
+- **MLflow**: An open-source platform for managing the ML lifecycle, including experiment tracking, reproducibility, and deployment.
+- **yfinance**: A Python library for retrieving financial market data directly from Yahoo Finance.
+- **seaborn**: A statistical data visualization library built on top of matplotlib for more advanced plots.
+- **statsmodels**: A library for statistical modeling, hypothesis testing, and time series analysis.
+- **pmdarima**: A library that provides automated ARIMA model fitting and diagnostics for time series forecasting.
+- **TensorFlow**: An open-source deep learning framework for building, training, and deploying machine learning models.
+
+## Outcome
+
+Based on the experimental results, the Multiple Linear Regression (MLR) model demonstrated the best performance in forecasting UNTR stock data. This is reflected in its MAPE of 0.034, indicating an average prediction error of only about 3.4%, an RMSE of 61.41, showing relatively low deviation from actual values, and an R² of 0.967, suggesting that the model explains approximately 96.7% of the variability in the data. The consistency of MLR across all three evaluation metrics highlights that a relatively simple linear model can outperform more complex approaches, including statistical, boosting, and deep learning methods, within the given dataset and transformation setup.
+
+## Challenges and Learnings
+
+The main challenges in this project included handling the non-stationary nature of stock time series with strong trends and seasonality, which required applying transformations such as differencing, logarithmic scaling, detrending, and seasonal decomposition; balancing between simple and complex models, as linear models like MLR surprisingly outperformed deep learning approaches; and managing multiple experiments across models and hyperparameters to ensure reproducibility and fair comparison. From these challenges, I learned the importance of data preprocessing and transformation in improving forecasting accuracy, the fact that simpler models can be highly competitive against advanced methods, and the value of using MLflow for systematic experiment tracking, which enhanced reproducibility, transparency, and efficient evaluation of results.
