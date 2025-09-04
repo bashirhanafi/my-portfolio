@@ -1,0 +1,39 @@
+---
+title: "Multi-Agent AI for Real-time Personalized Earthquake Notification for Alert and Organizational Reporting"
+category: "ai"
+publishedAt: "2025-04-08"
+summary: "Indonesia’s disaster management struggles with generic early warning communication and fragmented earthquake data spread across BMKG reports ..."
+images:
+  - "/images/projects/multiagent-disaster/flow_qwen.jpg"
+  - "/images/projects/multiagent-disaster/6.png"
+  - "/images/projects/multiagent-disaster/7.png"
+  - "/images/projects/multiagent-disaster/8.png"
+
+link: "https://github.com/bashirhanafi/multiagent-disaster"
+---
+
+<Button href="https://github.com/bashirhanafi/multiagent-disaster" size="l" data-border="rounded" variant="tertiary" weight="default" prefixIcon="github">
+  <Text variant="body-default-m">GitHub</Text>
+</Button>
+
+## Overview
+
+Indonesia’s disaster management struggles with generic early warning communication and fragmented earthquake data spread across BMKG reports, news, and social media, making real-time aggregation and dissemination difficult. Citizens need clear, empathetic alerts, while organizations require detailed reports for coordination, but without an integrated, automated, and personalized system, responses risk being slow and ineffective. To address this, I propose Multi-Agent AI for Real-time Personalized Earthquake Notification for Alert and Organizational Reporting, which integrates diverse data sources, processes them automatically, and delivers tailored communication to different stakeholders, enabling faster and more effective disaster response. I'm using Qwen3-4B-Instruct-2507 with Qwen-Agent for multi-agent orchestration, PostgreSQL for structured data storage, and YaGmail for automated personalized notifications.
+
+## Technologies Used
+
+- **Qwen-Agent**: Framework for building multi-agent AI systems with modular tools and task orchestration.
+- **OpenAI API**: Provided OpenAI API with litellm and vllm
+- **PostgreSQL**: A relational database for storing earthquake data, user information.
+- **BMKG API**: Official source for real-time earthquake and weather data in Indonesia.
+- **Tavily**: A retrieval tool for fetching and aggregating information from external sources like news and web.
+- **YagMail**: A Python package for automating personalized email notifications.
+- **SQLAlchemy**: A Python ORM for managing database operations with PostgreSQL efficiently
+
+## Outcome
+
+The outcome of this project is a multi-agent AI system that enables real-time, personalized earthquake notifications for both citizens and organizations in Indonesia. It successfully integrates multiple data sources (BMKG API, news feeds, disaster documents) into a PostgreSQL database, processes them through specialized agents (DataAgencyAgent, NewsAgent, QueryDatabaseAgent, AlertCitizenAgent, ReportDisasterAgent), and delivers tailored outputs according to the stakeholder’s needs. For citizens, the system provides concise, empathetic alerts through automated notifications, while for organizations it generates structured disaster reports with earthquake data, potential impacts, and actionable recommendations. The architecture supports two operating modes: (1) Real-time Alert Mode, which continuously fetches and broadcasts earthquake data every 30 seconds, and (2) Chatbot UI Mode, which allows users to interact with the system in natural language. All workflows are coordinated by the Qwen-Agent framework using Qwen3-4B-Instruct-2507, with experiment reproducibility supported by PostgreSQL logging and personalized distribution via YagMail. Ultimately, this system demonstrates how multi-agent orchestration and LLMs can enhance disaster management by improving the speed, clarity, and personalization of earthquake communication for different stakeholders.
+
+## Challenges and Learnings
+
+The key challenges in this project involved ensuring smooth multi-agent coordination, where different agents such as the Coordinator, DataAgencyAgent, NewsAgent, QueryDatabaseAgent, AlertCitizenAgent, and ReportDisasterAgent had to work in sync without overlapping tasks while remaining resilient to failures. Another challenge was the personalization of alerts, which required tailoring communication styles to different stakeholders, concise and empathetic for citizens, and detailed with actionable insights for organizations. Lastly, reliable notification delivery posed difficulties, as email alerts sent via YagMail needed to bypass technical barriers such as spam filters and connectivity issues to ensure messages reached their intended recipients on time.
